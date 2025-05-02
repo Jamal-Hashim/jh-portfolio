@@ -9,14 +9,17 @@ const Contact = () => {
         email: "",
         number: "",
         message: "",
-    })
+    });
 
-
+    const SERVICE_ID = "service_nd40sap";
+    const TEMPLATE_ID = "template_fbbxji2";
+    const PUBLIC_KEY = "MCMcISZjPVUG51pqj";
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY).then((results) => {
+        // sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then((result) => {
             alert("Message Sent!");
             setFormData({ name: "", email: "", number: "", message: "" })
         }).catch(() => {
@@ -30,7 +33,7 @@ const Contact = () => {
 
                 <RevealOnScroll>
 
-                    <div className='px-4 w-150'>
+                    <div className='px-4 md:w-150 w-full'>
                         <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'>Get In Touch</h2>
                         <form className='space-y-6' onSubmit={handleSubmit}>
 
