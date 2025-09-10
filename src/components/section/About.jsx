@@ -4,19 +4,17 @@ import RevealOnScroll from '../RevealOnScroll';
 const About = () => {
 
     const frontendSkills = [
-        "React",
-        "Vue",
-        "TypeScript",
-        "tailwindCSS",
-        "Svelte",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ReactJs",
+        "tailwind CSS",
     ];
 
     const backendSkills = [
-        "Node.js",
-        "Python",
-        "AWS",
+        "NodeJs",
+        "ExpressJs",
         "MongoDB",
-        "GraphQL",
     ];
 
     return (
@@ -71,7 +69,16 @@ const About = () => {
                                 <h3 className='text-xl font-bold mb-4'>Education</h3>
                                 <ul className='list-disc list-inside text-gray-300 space-y-2'>
                                     <li>
-                                        <strong>Diploma Engineering in Computer Science And Engineering </strong> - Government Polytechnic Mau [2022 - 2025]
+                                        <strong>High School </strong> - Nomani Inter College Mau [2022] <br />
+                                        <strong>Percentage </strong> - 79.66%
+                                    </li>
+                                    <li>
+                                        <strong>Diploma Engineering in Computer Science And Engineering </strong> - Government Polytechnic Mau [2022 - 2025] <br />
+                                        <strong>Percentage </strong> - 77.32%
+                                    </li>
+                                    <li>
+                                        <strong>B-Tech in Computer Science And Engineering </strong> - ITM College Lucknow [2025 - 2028] <br />
+                                        <strong>Persuing </strong>
                                     </li>
                                     <li>
                                         Relevant Coursework: Web Development, Web Designing and Wordpress Development.
@@ -82,7 +89,7 @@ const About = () => {
                                 <h3 className='text-xl font-bold mb-4'>Work Expericence</h3>
                                 <div className='space-y-4 text-gray-300'>
                                     <div>
-                                        <h4 className='font-semibold'>Fresher</h4>
+                                        <h4 className='font-semibold'>I have one year experience in Wordpress Development from Z-Technology.</h4>
                                     </div>
                                 </div>
                             </div>
